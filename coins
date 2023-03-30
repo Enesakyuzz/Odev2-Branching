@@ -1,0 +1,13 @@
+using UnityEngine;
+
+public class Rotation : MonoBehaviour
+{
+    public float xRotationSpeed = 0f; // x ekseninde dönüş hızı
+    public float yRotationSpeed = 0f; // y ekseninde dönüş hızı
+    public float zRotationSpeed = 0f; // z ekseninde dönüş hızı
+
+    void Update()
+    {
+        transform.Rotate(new Vector3(xRotationSpeed, yRotationSpeed, zRotationSpeed) * Time.deltaTime);
+    }
+}
